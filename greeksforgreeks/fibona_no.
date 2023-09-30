@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int n ;
+  cin>>n;
+  int fib1=1;
+  int fib2=1;
+  int fibn ;
+  for(int i=1;i<=n;i++)
+  {
+    if(i==1||i==2){
+      fibn=1;
+      cout<<fibn<<'\t' ;
+    }
+    else{
+    fibn=fib1+fib2 ;
+    cout<<fibn<<'\t' ;
+    fib1=fib2 ;
+    fib2=fibn ;
+    }
+    
+  }
+    return 0;
+}
